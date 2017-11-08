@@ -1,0 +1,5 @@
+<h2>Stotch Travels</h2>
+
+<% @categories.each do |category| %>
+<%= link_to category.name, category_path(category) %> <br>
+<% end %>

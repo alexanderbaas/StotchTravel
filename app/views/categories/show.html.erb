@@ -1,0 +1,6 @@
+<h2><%= "All our #{@category.name} trips" %> </h2>
+
+
+<% @category.travels.each do |travel| %>
+<%= travel.name %> <br>
+<% end %>
