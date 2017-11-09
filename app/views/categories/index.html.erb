@@ -1,5 +1,12 @@
-<h2>Stotch Travels</h2>
 
-<% @categories.each do |category| %>
-<%= link_to category.name, category_path(category) %> <br>
-<% end %>
+<div class="header">
+  <h2>Stotch - Travels</h2>
+</div>
+
+<div>
+  <div>
+  <% @categories.each do |category| %>
+  <%= link_to category.name, category_path(category) %> <br>
+  </div>
+  <% end %>
+</div>

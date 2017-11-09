@@ -5,6 +5,6 @@ root 'categories#index'
     resources :travels
   end
 
-resources :travels
+# resources :travels
 
 end

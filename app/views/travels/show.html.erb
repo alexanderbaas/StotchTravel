@@ -1,0 +1,23 @@
+
+    <div class="header title">
+      <%= @travel.name %>
+    </div>
+
+
+<div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <%= image_tag @travel.image, class:"center-block show"%>
+      </div>
+
+      <div class="col-md-6 travel">
+        <%= @travel.name %> <br>
+        <p> Means of travel:<%= @travel.means %></p>
+        <%= @travel.description %> <br>
+        <p>$<%= @travel.price %></p> <br>
+      </div>
+
+    </div>
+
+</div>

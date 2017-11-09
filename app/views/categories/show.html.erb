@@ -1,6 +1,19 @@
-<h2><%= "All our #{@category.name} trips" %> </h2>
+<div class="header">
+  <h2><%= "All our #{@category.name} trips" %> </h2>
+</div>
+
+<div class="row travel">
+
+    <% @category.travels.each do |travel| %>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <%= image_tag travel.image, class:"image"%> <br>
+      <%= link_to travel.name, category_travel_path(@category, travel) %> <br>
+    </div>
+    <% end %>
+
+</div>
 
 
-<% @category.travels.each do |travel| %>
-<%= travel.name %> <br>
-<% end %>
+<div>
+    <%= link_to "Home", root_path %>
+</div>
